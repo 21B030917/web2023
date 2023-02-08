@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: white;
+    line-height: 1.5; 
+    max-width: 1960px; 
+}
+
+.container{
+    width:100% ;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: #262626;  
+}
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 13px;
+    padding: 0px 65px;
+}
+
+.navbar a{
+    margin-left: 30px;
+}
+
+.left-menu img{
+    width: 108px;
+    height: 23px;
+}
+.left-menu{
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-1{
+
+    background-color: #0067b8;
+    color: white;
+    padding: 10px 12px;
+    font-weight: bold;
+    margin: 8px 24px 8px 0px;
+    font-size: 16px;
+    border-radius: 1px;
+    padding: 10px 12px;
+}
+
+
+.navbar a:hover, .btn-6:hover{ 
+    border-bottom: 2px solid #262626;
+} 
+
+ .btn{ 
+    cursor: pointer; 
+    display: inline-block;
+} 
+
+
+.btn-6{
+    color: #000000;
+    font-weight: bold;
+    padding: 8px 21px 8px 0px; 
+}
+header{
+    width: 100%;
+    height: 500px;
+    background: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP5-1920x600");
+    background-repeat: no-repeat;
+    background-size:contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    margin: 5px 0;
+}
+
+.microsoft365 h1, .microsoft365 p{
+    margin-bottom: 25px;
+    width: 450px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 70px;
+}
+
+.cards div, .cards img{
+    width: 300px;
+ 
+}
+.cards h2{
+    margin-top: 15px;
+}
+
+.cards p{
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.cards a{
+    font-weight: bold;
+    color: rgb(0, 103, 184);
+}

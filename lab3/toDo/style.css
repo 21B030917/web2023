@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 235, 192);
+    color:black;
+    font-family: "Poppins", sans-serif;
+    /* min-height: 100vh; */
+}
+header {
+    font-size: 1.5rem;
+}
+header, form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-input, 
+.todo-button {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+}
+
+.todo-button {
+    color: rgb(255, 200, 0);
+    background: white;
+    cursor: pointer;
+    /* transition: all 0.5 ease; */
+    margin-left: 10px;
+}
+.todo-button:hover {
+    color: white;
+    background: rgb(255, 200, 0);
+}
+.fa-plus-circle {
+    margin-top: 0.3rem;
+    margin-left: -8px;
+}

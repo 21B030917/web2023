@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+    <app-category 
+    [all]="getTotalProducts()"
+    [washing_cleaning]=" getTotalWashingAndCleaning()"
+    [face_masks]="getTotalFaceMasks()" 
+    [patches]="getTotalPatches()"
+    [lips]="getTotalLips()"
+    (filterRadioButtonSelectionChanged)="onFilterRadioButtonChanged($event)"
+    ></app-category>
+</div>
+
+
+
+<ng-container *ngFor="let product of products">
+    <ng-container *ngIf=" searchText === '' ||  product.name.toLowerCase().includes(searchText)">
+        <div class="items"  *ngIf=" productCountRadioButton === 'all' ||  productCountRadioButton === product.type">
+            <div class="info">
+                <app-product-item (status)="editProducts($event)" [product]="product"></app-product-item>
+            </div>
+        </div>
+    </ng-container>
+    
+
+    <!-- <div class="items"  *ngIf=" searchText === '' ||  product.name.toLowerCase().includes(searchText)">
+        <div class="info">
+            <app-product-item (status)="editProducts($event)" [product]="product"></app-product-item>
+        </div>
+    </div> -->
+</ng-container>

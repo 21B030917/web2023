@@ -1,0 +1,21 @@
+.wrapper{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.items{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 329px;
+  border: 1px solid rgb(171, 166, 166);
+  width: 250px; /* Ширина */
+  margin: 0 10px 10px 0; /* Отступы */
+  padding: 10px 0; /* Поля сверху и снизу */
+  text-align: center; /* Выравнивание по центру */
+}
+
+.info{
+  width: 100%;
+  margin: 10px;
+}

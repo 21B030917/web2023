@@ -1,0 +1,12 @@
+button{
+  margin: 5px;
+}
+
+
+.info{
+  margin: 10px;
+}
+
+img{
+  object-fit: contain;
+}

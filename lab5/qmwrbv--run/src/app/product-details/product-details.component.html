@@ -1,0 +1,21 @@
+<div class="info">
+  <div *ngIf="product">
+    <h3>{{ product.name }}</h3>
+    <h4>{{ product.price  }} ₸ </h4>
+
+
+    <div class="galeri">
+      <div *ngFor="let image of product.images" style="display: inline-block;">
+        <img src="{{image}}" alt="photoProduct" style="width: 200px; height: 250px; margin: 10px;">
+      </div>
+    </div>
+   
+  
+    
+    
+    <p>{{ product.description }}</p>
+    <button type="button" (click)="addToCart(product)">Buy</button>
+    <a href="{{product.url}}" target="_blank"><button type="button">See More</button></a>
+    
+  </div>
+</div>

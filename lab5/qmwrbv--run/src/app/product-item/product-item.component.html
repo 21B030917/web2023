@@ -1,0 +1,41 @@
+<div class="info">
+    <div class="picture">
+      <img *ngIf="product.image" src="{{ product.image }}" alt="photoProduct">  
+    </div>
+
+    <h6>
+        <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]">
+        {{ product.name }}
+        </a>
+    </h6>
+
+
+    <img *ngIf="product.rating" src="{{ product.rating === 5 ? 'https://static.vecteezy.com/system/resources/previews/004/256/658/original/five-star-customer-product-ratings-review-flat-icons-for-apps-and-websites-illustration-of-five-golden-yellow-stars-in-a-row-isolated-in-a-white-background-concepts-for-ratings-customers-review-free-vector.jpg' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIHVVElDLksMoJrPAfbPbz6oWY6DGJn7woLg&usqp=CAU'}}" alt="photoProduct" style="display:flex; width: 50px; height: auto;">
+
+      
+    <div class="buttons">
+        
+        
+        <div class="likes">
+            <img (click)="incrementLikes()" width="30" src="https://cdn0.iconfinder.com/data/icons/social-reaction-and-emoji/519/like-256.png">
+            {{product.likes}}
+        </div>
+
+        <a href = "https://telegram.me/share/url?url={{product.url}}&text='Делюсь с вами ссылкой>">
+            <button type="button" (click)="share()">Share</button>
+        </a>
+    
+    
+        <div class="delete">
+            <img (click)="delete(product.id)" class="del-btn" src="https://cdn4.iconfinder.com/data/icons/essentials-72/24/013_-_Trash-256.png" width="30">
+        </div>
+
+        
+
+    </div>
+    
+
+
+</div>

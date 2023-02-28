@@ -1,0 +1,29 @@
+<div class="filter-container">
+    <span>Filter: </span>
+
+    <input type="radio" name="filter" value="all" 
+    [(ngModel)]="selectedRadioButtonValue" 
+    (change)="onRadioButtonSelectionChanged()"/>
+    <span>{{'All Products('+all+')'}}</span>
+
+    <input type="radio" name="filter" value="washing_cleaning" 
+    [(ngModel)]="selectedRadioButtonValue" 
+    (change)="onRadioButtonSelectionChanged()"/>
+    <span>{{'For washing and cleaning('+washing_cleaning+')'}}</span>
+
+    <input type="radio" name="filter" value="face_masks" 
+    [(ngModel)]="selectedRadioButtonValue" 
+    (change)="onRadioButtonSelectionChanged()"/>
+    <span>{{'Face masks('+face_masks+')'}}</span>
+
+    <input type="radio" name="filter" value="patches" 
+    [(ngModel)]="selectedRadioButtonValue" 
+    (change)="onRadioButtonSelectionChanged()"/>
+    <span>{{'Patches('+patches+')'}}</span>
+
+    <input type="radio" name="filter" value="lips" 
+    [(ngModel)]="selectedRadioButtonValue" 
+    (change)="onRadioButtonSelectionChanged()"/>
+    <span>{{'Lip care products('+lips+')'}}</span>
+
+</div>

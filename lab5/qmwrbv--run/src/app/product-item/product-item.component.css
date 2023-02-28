@@ -1,0 +1,25 @@
+.picture img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  
+}
+
+.picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    width: 100%;
+    margin: 10px;   
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}

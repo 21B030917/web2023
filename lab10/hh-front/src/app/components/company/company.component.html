@@ -1,0 +1,10 @@
+
+<div class="company">
+  <h2>{{ company.name }}</h2>
+  <h4>Address: {{ company.city }}, {{ company.address }}</h4>
+  <p>{{ company.description }}</p>
+  <div class="button">
+    <button (click)="listOfVacancies(company)" class='btn'>Show more</button>
+  </div>
+
+</div>

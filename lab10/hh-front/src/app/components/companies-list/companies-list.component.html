@@ -1,0 +1,8 @@
+<div class="companies-list">
+    <div class="companies" *ngIf="companies">
+      <app-company *ngFor="let company of companies" [company]="company"></app-company>
+    </div>
+
+    <p>Or you can see the top 10 vacancies</p>
+    <button class="top10"><a routerLink="/vacancies/topten">Top 10</a></button>
+</div>

@@ -1,0 +1,47 @@
+.vacancy {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+  
+  
+  
+  .vacancy h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #854b05;
+    text-align: center;
+  }
+  
+  .vacancy p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    
+  }
+  
+  .button{
+    text-align: center;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    transition: all 0.3s ease;
+  }
+  
+.btn:hover {
+    background-color: #f5a4a4; 
+    box-shadow: 0px 0px 10px #ccc; 
+}
+  
+  

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+}
+  
+
+  
+.header {
+    background-color: #2a95f3;
+    color: #fff;
+    padding: 20px 0;
+    height: 100vh;
+}
+  
+
+  
+.hero {
+    text-align: center;
+    margin: 100px 0;
+}
+  
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+  
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+  
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #1E88E5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+    
+.btn:hover {
+    background-color: #ee6428;
+    color: #fff;
+}
+    
+
+
+   

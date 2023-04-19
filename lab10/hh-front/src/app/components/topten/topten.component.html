@@ -1,0 +1,5 @@
+<div class="vacancies-list">
+    <div class="vacancies" *ngIf="vacancies">
+      <app-vacancy *ngFor="let v of vacancies" [vacancy]="v"></app-vacancy>
+    </div>
+</div>
